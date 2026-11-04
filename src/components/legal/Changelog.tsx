@@ -6,13 +6,14 @@ interface ChangelogProps {
 }
 
 const changelogSections = [
+  { id: "v2-1-1", title: "v2.1.1 · Navigation & Drawer Fluidity" },
   { id: "v2-1-0", title: "v2.1.0 · Dual Volume & Sharing" },
   { id: "v2-0-9", title: "v2.0.9 · Tactile FX & Haptics" },
-  { id: "v2-0-8", title: "v2.0.8 · Auth Redesign" },
+  { id: "v2-0-8", title: "v2.0.8 · Account & Security Redesign" },
   { id: "v2-0-7", title: "v2.0.7 · Code Breaker Launch Hub" },
-  { id: "v2-0-6", title: "v2.0.6 · Comments & Music Engine" },
-  { id: "v2-0-5", title: "v2.0.5 · Showcase & Security" },
-  { id: "v2-0-4", title: "v2.0.4 · Production R8 Release" },
+  { id: "v2-0-6", title: "v2.0.6 · Comments & Audio Engine" },
+  { id: "v2-0-5", title: "v2.0.5 · Showcase & Privacy" },
+  { id: "v2-0-4", title: "v2.0.4 · Production Launch" },
   { id: "v1-0-0", title: "v1.0.0 · Initial Launch" },
 ];
 
@@ -20,24 +21,101 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
   return (
     <LegalLayout
       title="Changelog & Release Notes"
-      subtitle="Complete, transparent history of new features, performance improvements, bug fixes, and security updates across every TidBit release."
-      effectiveDate="Current Version: v2.1.0 (Build 6) · Updated: 1st November, 2026"
+      subtitle="Complete history of new features, performance improvements, bug fixes, and user experience polish across every TidBit release."
+      effectiveDate="Current Version: v2.1.1 (Build 7) · Updated: 4th November, 2026"
       sections={changelogSections}
       onBackToHome={onBackToHome}
     >
       {/* ========================================================= */}
-      {/* v2.1.0 */}
+      {/* v2.1.1 */}
       {/* ========================================================= */}
-      <section id="v2-1-0" className="scroll-mt-24 space-y-4">
+      <section id="v2-1-1" className="scroll-mt-24 space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200/80 pb-3">
           <div className="flex items-center gap-2.5">
             <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
-              v2.1.0
+              v2.1.1
             </h2>
             <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/70">
               Latest Release
             </span>
           </div>
+          <span className="text-xs text-neutral-500 font-medium">
+            4th November, 2026
+          </span>
+        </div>
+
+        <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
+          Restored full Android device navigation bar visibility with complete edge-to-edge layout adaptation, eliminated bottom sheet drawer oscillation loops, redesigned Code Breaker statistics as an interactive modal drawer, and added in-game options.
+        </p>
+
+        <div className="space-y-3 pt-1">
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              Added
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Code Breaker Statistics Drawer:</strong> Replaced overlay popups with a dedicated modal drawer featuring four KPI performance cards (Games Played, Win Rate, Current Streak, Max Streak) and an interactive 10-tier guess distribution chart.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Interactive Game Options Drawer:</strong> Added a unified 3-dot options menu in Code Breaker offering immediate access to the tutorial guide, player statistics, board reset, and lobby return.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-500" />
+              Improved
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Device Navigation Bar Integration:</strong> Restored permanent visibility and edge-to-edge support for Android system navigation buttons (3-button navigation and gesture nav), ensuring zero overlapping or content cutoff.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Fluid Drawer Physics:</strong> Streamlined bottom sheet state transitions across Comments, Search Explore filters, AI Study options, and Game settings drawers to ensure smooth, instantaneous opening and closing without bounce.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Official Ecosystem Migration:</strong> Completed domain and repository alignment for the verified showcase platform and direct APK distribution pipeline.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-amber-500" />
+              Fixed
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Drawer State Oscillation:</strong> Resolved an issue where certain bottom sheets could rapidly toggle between open and closed states during swipe gestures.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Code Breaker Options Visibility:</strong> Fixed the 3-dot options button in active games to reliably open the settings and statistics drawer.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr className="border-neutral-200/80 my-8" />
+
+      {/* ========================================================= */}
+      {/* v2.1.0 */}
+      {/* ========================================================= */}
+      <section id="v2-1-0" className="scroll-mt-24 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200/80 pb-3">
+          <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
+            v2.1.0
+          </h2>
           <span className="text-xs text-neutral-500 font-medium">
             1st November, 2026
           </span>
@@ -56,27 +134,27 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Dual Vertical Volume Sliders:</strong> In Create Post, users can now adjust the video audio volume and a separate background music volume slider (displayed only when music is attached) with tap and vertical drag gestures.</span>
+                <span><strong>Dual Vertical Volume Sliders:</strong> In Create Post, creators can adjust the video audio volume and a separate background music volume slider with intuitive vertical drag gestures.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Audio Strip Optimization:</strong> When the video volume slider is pulled to 0%, the audio track is completely stripped during upload/transcoding, reducing video upload size.</span>
+                <span><strong>Audio Strip Optimization:</strong> When the video volume slider is pulled to 0%, the audio track is automatically stripped during processing, reducing final file size.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Direct System Share Targets:</strong> Split external app sharing into two distinct Android share sheet options: <em>TidBit Post</em> (Plus icon) and <em>TidBit AI</em> (Bud AI mascot icon), directly opening the target screen without intermediate popups.</span>
+                <span><strong>Direct System Share Targets:</strong> Split external app sharing into two distinct Android share options: <em>TidBit Post</em> and <em>TidBit AI</em>, directly opening the target screen without intermediate popups.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Universal Deep Linking:</strong> Shared posts and reels now use clean HTTPS links that auto-redirect directly into the TidBit Android app via custom scheme routing, with instant APK download fallback for non-app users.</span>
+                <span><strong>Universal Deep Linking:</strong> Shared posts and reels now use clean HTTPS links that auto-redirect directly into the TidBit Android app, with instant APK download fallback for web users.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Modern Subscription Experience:</strong> Overhauled membership screen with glassmorphic cards, luminous active border gradients, "SAVE 75%" badges, and tactile 7-day free trial CTA.</span>
+                <span><strong>Modern Subscription Experience:</strong> Overhauled membership screen with glassmorphic cards, luminous active border gradients, and free trial access.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Security &amp; Demographic Storage:</strong> Supabase schema additions for Date of Birth (<code className="text-xs bg-neutral-100 px-1 py-0.5 rounded">dob</code>) and gender with strict Row Level Security (RLS) policies and rate limiting.</span>
+                <span><strong>Account Profile Customization:</strong> Support for user birthday and demographic preferences with end-to-end encryption and private local storage.</span>
               </li>
             </ul>
           </div>
@@ -89,11 +167,11 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Tactile Ripples Everywhere:</strong> Added Material 3 tactile touch ripples across all settings buttons, subpages, top-left back buttons, top-right action controls, notification toggles, and chat action buttons.</span>
+                <span><strong>Tactile Touch Feedback:</strong> Added responsive tactile touch ripples across settings options, navigation buttons, and interactive controls.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Streak Card Cleanup:</strong> Replaced the heavy orange ripple on SubjectStreakCard with a clean, subtle neutral sheen.</span>
+                <span><strong>Streak Card Cleanup:</strong> Replaced the heavy highlight on Subject Streak Cards with a clean, subtle neutral sheen.</span>
               </li>
             </ul>
           </div>
@@ -106,11 +184,11 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Background Audio Bug:</strong> Fixed video and music continuing to play when switching tabs, navigating away, or minimizing the app via lifecycle observers and player pool cleanup.</span>
+                <span><strong>Background Audio Playback:</strong> Fixed video and music continuing to play when switching tabs, navigating away, or minimizing the app.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Reels Scrubber Alignment:</strong> Playback slider padding strictly preserved at 8.dp above the device navigation bar so captions never clip the scrubber.</span>
+                <span><strong>Reels Scrubber Alignment:</strong> Playback slider padding strictly preserved above the device navigation bar so captions never clip the scrubber.</span>
               </li>
             </ul>
           </div>
@@ -133,7 +211,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
         </div>
 
         <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
-          Enhanced authentication flow, interactive EduHaptics, living heart animations, and baseline profile optimizations.
+          Enhanced authentication flow, interactive tactile feedback, living heart animations, and startup performance tuning.
         </p>
 
         <div className="space-y-3 pt-1">
@@ -149,7 +227,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Directional Transitions:</strong> Smooth left-to-right slide navigation between login, registration, and confirmation drawers.</span>
+                <span><strong>Directional Transitions:</strong> Smooth left-to-right slide navigation between login, registration, and confirmation screens.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
@@ -157,7 +235,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Tactile EduHaptics:</strong> Micro-haptic vibration feedback on cognitive game buttons and interactive gestures.</span>
+                <span><strong>Tactile Feedback:</strong> Micro-haptic vibration feedback on cognitive game buttons and interactive gestures.</span>
               </li>
             </ul>
           </div>
@@ -170,15 +248,15 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Multi-Device Security:</strong> Added device fingerprinting dictionary to detect and challenge unauthorized logins.</span>
+                <span><strong>Multi-Device Security:</strong> Added device recognition to detect and challenge unrecognized logins.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Code Breaker Engine:</strong> Increased stability and expanded dictionary word coverage for spelling challenges.</span>
+                <span><strong>Code Breaker Engine:</strong> Increased stability and expanded logic patterns for numerical challenges.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>R8 Optimization:</strong> Compiled release with baseline profiles, lowering RAM footprint by 14%.</span>
+                <span><strong>Memory &amp; Performance Tuning:</strong> Applied baseline execution profiles, lowering active memory consumption by 14%.</span>
               </li>
             </ul>
           </div>
@@ -230,7 +308,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Password Strength Validator:</strong> Instant real-time entropy indicators and feedback while entering passwords.</span>
+                <span><strong>Password Strength Validator:</strong> Instant real-time strength indicators and feedback while entering passwords.</span>
               </li>
             </ul>
           </div>
@@ -243,11 +321,11 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Startup Icon Crash:</strong> Resolved fatal ClassCastException on Android 14+ when resolving adaptive launcher icon in AuthScreen.</span>
+                <span><strong>Adaptive Icon Stability:</strong> Resolved a display issue when loading launcher icons on Android 14+.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Username Word Lists NullPointer:</strong> Moved randomized username generation dictionaries to a companion object to eliminate cold startup delays.</span>
+                <span><strong>Instant App Startup:</strong> Optimized internal dictionary caches to eliminate delays during cold startup.</span>
               </li>
             </ul>
           </div>
@@ -282,7 +360,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Code Breaker Launch Hub:</strong> Game launcher with dedicated tabs for Classic, Daily Challenge, and Timed mode.</span>
+                <span><strong>Code Breaker Launch Hub:</strong> Game launcher with dedicated modes for Classic, Daily Challenge, and Timed mode.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
@@ -294,7 +372,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Pre-Verified SHA-256 Checksum:</strong> Displayed verified cryptographic checksums on the release showcase site.</span>
+                <span><strong>Cryptographic Checksum Verification:</strong> Displayed verified cryptographic checksums on the release showcase site.</span>
               </li>
             </ul>
           </div>
@@ -307,20 +385,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Acoustic Feedback:</strong> Subtly lowered button sound decibels for quiet reading sessions.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-rose-500" />
-              Removed
-            </h3>
-            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
-              <li className="flex items-start gap-2.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Legacy CS Card:</strong> Replaced the placeholder Computer Science card with the native Code Breaker workout.</span>
+                <span><strong>Acoustic Feedback:</strong> Subtly lowered button sound decibels for quiet reading and study sessions.</span>
               </li>
             </ul>
           </div>
@@ -380,19 +445,6 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
               </li>
             </ul>
           </div>
-
-          <div>
-            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-amber-500" />
-              Fixed
-            </h3>
-            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
-              <li className="flex items-start gap-2.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Landing Page Blur:</strong> Fixed backdrop blur inconsistency in QR code preview modal on mobile browsers.</span>
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -412,7 +464,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
         </div>
 
         <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
-          Showcase landing page launch, backend key embedding, and reel playback polish.
+          Showcase landing page launch, secure configuration hardening, and reel playback polish.
         </p>
 
         <div className="space-y-3 pt-1">
@@ -424,7 +476,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Live Showcase Site:</strong> GitHub Pages deployment providing an interactive simulator of the TidBit application.</span>
+                <span><strong>Live Showcase Site:</strong> GitHub Pages deployment providing an interactive showcase of the TidBit application.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
@@ -468,7 +520,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
         </div>
 
         <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
-          Official production release of TidBit optimized with whole-program R8 compilation.
+          Official production release of TidBit with compact package size and maximum performance.
         </p>
 
         <div className="space-y-3 pt-1">
@@ -497,11 +549,11 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>R8 Optimization:</strong> ProGuard dead-code elimination and obfuscation producing a compact ~10 MB APK.</span>
+                <span><strong>Package Size Optimization:</strong> Optimized binary size and assets producing an ultra-lightweight ~10 MB app.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>Local Encryption:</strong> Device-local Keystore-backed encryption for user notes and reading bookmarks.</span>
+                <span><strong>Local Encryption:</strong> Device-local hardware-backed keystore encryption for user notes and reading bookmarks.</span>
               </li>
             </ul>
           </div>
@@ -544,7 +596,7 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
-                <span><strong>BookNest Digital Library:</strong> Classical literature e-reader with offline neural voice narration and typography controls.</span>
+                <span><strong>BookNest Digital Library:</strong> Classical literature e-reader with offline audio narration and typography controls.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
