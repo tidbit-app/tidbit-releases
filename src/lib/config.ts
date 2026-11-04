@@ -11,17 +11,17 @@ export const APP_CONFIG = {
   supportedArchitectures: "ARM64-v8a, armeabi-v7a, x86_64",
   
   // Public Release Repository on GitHub (Source code remains private in EduGram)
-  githubOwner: "TheGaurav09",
+  githubOwner: "tidbit-app",
   githubRepo: "tidbit-releases",
-  githubRepoUrl: "https://github.com/TheGaurav09/tidbit-releases",
+  githubRepoUrl: "https://github.com/tidbit-app/tidbit-releases",
   
   // Direct latest APK download link from the public releases repository
   apkDownloadUrl:
     import.meta.env.VITE_APK_DOWNLOAD_URL ||
-    "https://github.com/TheGaurav09/tidbit-releases/releases/latest/download/tidbit-app-release.apk",
+    "https://github.com/tidbit-app/tidbit-releases/releases/latest/download/tidbit-app-release.apk",
     
   // Public Releases page
-  releasesPageUrl: "https://github.com/TheGaurav09/tidbit-releases/releases",
+  releasesPageUrl: "https://github.com/tidbit-app/tidbit-releases/releases",
   
   // Security Verification
   sha256VerificationText: "SHA-256 Checksum Verified",

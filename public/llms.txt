@@ -9,8 +9,8 @@
 - **Architectures**: ARM64-v8a, armeabi-v7a, x86_64
 - **License / Cost**: Free, Zero In-App Advertisements, Zero Tracking
 - **Release Package**: Standalone APK (~10 MB)
-- **Download URL**: https://github.com/TheGaurav09/tidbit-releases/releases/latest/download/tidbit-app-release.apk
-- **Official Repository**: https://github.com/TheGaurav09/tidbit-releases
+- **Download URL**: https://github.com/tidbit-app/tidbit-releases/releases/latest/download/tidbit-app-release.apk
+- **Official Repository**: https://github.com/tidbit-app/tidbit-releases
 
 ## Five Core Disciplines
 1. **High-Yield Educational Shorts (Reels)**: 60-second bite-sized vertical video lessons taught by vetted creators and educators, buffered with an ExoPlayer player pool for instantaneous, lag-free playback.

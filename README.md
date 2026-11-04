@@ -1,13 +1,13 @@
 # TidBit — The Antidote to Brainrot 📚✨
 
-[![GitHub Release](https://img.shields.io/github/v/release/TheGaurav09/tidbit-releases?color=2457D6&label=Latest%20Release)](https://github.com/TheGaurav09/tidbit-releases/releases/latest)
-[![Live Showcase Site](https://img.shields.io/badge/Live%20Showcase-GitHub%20Pages-00C853)](https://thegaurav09.github.io/tidbit-releases/)
-[![Android Version](https://img.shields.io/badge/Android-8.0%2B%20%28API%2026%2B%29-blue)](https://github.com/TheGaurav09/tidbit-releases)
+[![GitHub Release](https://img.shields.io/github/v/release/tidbit-app/tidbit-releases?color=2457D6&label=Latest%20Release)](https://github.com/tidbit-app/tidbit-releases/releases/latest)
+[![Live Showcase Site](https://img.shields.io/badge/Live%20Showcase-GitHub%20Pages-00C853)](https://tidbit-app.github.io/tidbit-releases/)
+[![Android Version](https://img.shields.io/badge/Android-8.0%2B%20%28API%2026%2B%29-blue)](https://github.com/tidbit-app/tidbit-releases)
 [![License](https://img.shields.io/badge/License-Proprietary-neutral)](LICENSE)
 
 > **TidBit** is a distraction-free educational micro-learning Android application engineered to replace dopamine-heavy algorithmic feeds with vetted 60-second micro-lessons, Bud AI active recall checks, and a serene digital library.
 
-🌐 **Official Live Showcase & Download Site**: [https://thegaurav09.github.io/tidbit-releases/](https://thegaurav09.github.io/tidbit-releases/)
+🌐 **Official Live Showcase & Download Site**: [https://tidbit-app.github.io/tidbit-releases/](https://tidbit-app.github.io/tidbit-releases/)
 
 ---
 
@@ -17,8 +17,8 @@ Download the verified production release directly:
 
 | File | Architecture | Size | Direct Link |
 | :--- | :--- | :--- | :--- |
-| **`tidbit-app-release.apk`** | ARM64-v8a, armeabi-v7a, x86_64 | ~10 MB | [⬇️ Download Latest APK](https://github.com/TheGaurav09/tidbit-releases/releases/latest/download/tidbit-app-release.apk) |
-| **`sha256sum.txt`** | Cryptographic Checksum | < 1 KB | [🛡️ Download Checksum](https://github.com/TheGaurav09/tidbit-releases/releases/latest/download/sha256sum.txt) |
+| **`tidbit-app-release.apk`** | ARM64-v8a, armeabi-v7a, x86_64 | ~10 MB | [⬇️ Download Latest APK](https://github.com/tidbit-app/tidbit-releases/releases/latest/download/tidbit-app-release.apk) |
+| **`sha256sum.txt`** | Cryptographic Checksum | < 1 KB | [🛡️ Download Checksum](https://github.com/tidbit-app/tidbit-releases/releases/latest/download/sha256sum.txt) |
 
 ### 🛡️ Verify Cryptographic Integrity
 

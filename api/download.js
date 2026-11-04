@@ -6,7 +6,7 @@ export default function handler(req, res) {
   const downloadUrl =
     process.env.APK_DOWNLOAD_URL ||
     process.env.VITE_APK_DOWNLOAD_URL ||
-    'https://github.com/TheGaurav09/tidbit-releases/releases/latest/download/tidbit-app-release.apk';
+    'https://github.com/tidbit-app/tidbit-releases/releases/latest/download/tidbit-app-release.apk';
 
   // Instruct browser to download directly as an attachment without page navigation
   res.setHeader('Content-Disposition', 'attachment; filename="tidbit-v2.1.0.apk"');

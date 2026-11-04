@@ -1,5 +1,5 @@
 # TidBit Web & AI Search Crawler Directives
-# https://github.com/TheGaurav09/tidbit-releases
+# https://github.com/tidbit-app/tidbit-releases
 
 User-agent: *
 Allow: /
@@ -28,5 +28,5 @@ User-agent: Applebot-Extended
 Allow: /
 
 # Sitemap reference
-Sitemap: https://TheGaurav09.github.io/tidbit-releases/sitemap.xml
+Sitemap: https://tidbit-app.github.io/tidbit-releases/sitemap.xml
 
