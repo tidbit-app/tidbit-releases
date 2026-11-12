@@ -5,8 +5,8 @@
 export const APP_CONFIG = {
   name: "TidBit",
   tagline: "The Antidote to Brainrot | Distraction-Free Micro-Learning",
-  version: "v2.1.2",
-  apkSize: "10.9 MB",
+  version: "v2.1.3",
+  apkSize: "17.1 MB",
   minAndroidVersion: "Android 8.0 (API level 26)+",
   supportedArchitectures: "ARM64-v8a, armeabi-v7a, x86_64",
   

@@ -6,6 +6,7 @@ interface ChangelogProps {
 }
 
 const changelogSections = [
+  { id: "v2-1-3", title: "v2.1.3 · High-Performance PDF Reader & Book Store" },
   { id: "v2-1-2", title: "v2.1.2 · 3D Journaling App & Physics Engine" },
   { id: "v2-1-1", title: "v2.1.1 · Navigation & Drawer Fluidity" },
   { id: "v2-1-0", title: "v2.1.0 · Dual Volume & Sharing" },
@@ -23,10 +24,85 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
     <LegalLayout
       title="Changelog & Release Notes"
       subtitle="Complete history of new features, performance improvements, bug fixes, and user experience polish across every TidBit release."
-      effectiveDate="Current Version: v2.1.2 (Build 8) · Updated: 12th November, 2026"
+      effectiveDate="Current Version: v2.1.3 (Build 9) · Updated: 13th November, 2026"
       sections={changelogSections}
       onBackToHome={onBackToHome}
     >
+      {/* ========================================================= */}
+      {/* v2.1.3 */}
+      {/* ========================================================= */}
+      <section id="v2-1-3" className="scroll-mt-24 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200/80 pb-3">
+          <div className="flex items-center gap-2.5">
+            <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
+              v2.1.3
+            </h2>
+            <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/70">
+              Latest Release
+            </span>
+          </div>
+          <span className="text-xs text-neutral-500 font-medium">
+            13th November, 2026
+          </span>
+        </div>
+
+        <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
+          Complete rebuild of the Book Store and PDF Reader: introducing high-performance zero-flicker PDF rendering, theme-adaptive reading modes, precision page scrubber with instant jump-to-page, offline selectable text extraction with Tid AI study assistant integration, and local PDF book import.
+        </p>
+
+        <div className="space-y-3 pt-1">
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              Added
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>High-Performance PDF Reader Engine:</strong> Dual reading modes (horizontal page flip & vertical continuous strip) with hardware-accelerated bitmap caching and two-finger pinch-to-zoom.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Gliding Page Scrubber:</strong> Dynamic vertical scrubber tracking reader progression from top to bottom just below the header, with instant Jump-to-Page dialog on tap and jitter-free dragging.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Quick Bookmark Toggle on Header:</strong> Dedicated one-tap bookmark toggle button right in the top header with tactile haptics, plus horizontal jump chips in the reader drawer.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Offline Text Extraction & Tid AI Integration:</strong> Extract selectable text from any PDF page, copy or share with clean icon controls, or tap "Ask Tid" to pre-fill the selected excerpt directly into the Tid AI Study Assistant.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Local PDF Library Import:</strong> Pick any PDF from device storage with automatic first-page cover extraction and safe sandboxed local persistence.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-500" />
+              Improved
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Theme-Adaptive Reading Modes:</strong> Light, Warm Paper (Sepia), and Dark themes with adaptive top header, scrubber, and drawer backgrounds.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Zero-Flicker Skeleton Loading:</strong> Elegant shimmering text skeleton placeholder during initial document load, eliminating any transient error flash.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Notch & Navigation Inset Handling:</strong> Added full status bar and navigation bar insets to prevent UI clipping on edge-to-edge displays.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ========================================================= */}
       {/* v2.1.2 */}
       {/* ========================================================= */}
@@ -36,9 +112,6 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
               v2.1.2
             </h2>
-            <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/70">
-              Latest Release
-            </span>
           </div>
           <span className="text-xs text-neutral-500 font-medium">
             12th November, 2026
