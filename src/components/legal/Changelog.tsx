@@ -6,6 +6,7 @@ interface ChangelogProps {
 }
 
 const changelogSections = [
+  { id: "v2-1-2", title: "v2.1.2 · 3D Journaling App & Physics Engine" },
   { id: "v2-1-1", title: "v2.1.1 · Navigation & Drawer Fluidity" },
   { id: "v2-1-0", title: "v2.1.0 · Dual Volume & Sharing" },
   { id: "v2-0-9", title: "v2.0.9 · Tactile FX & Haptics" },
@@ -22,10 +23,81 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
     <LegalLayout
       title="Changelog & Release Notes"
       subtitle="Complete history of new features, performance improvements, bug fixes, and user experience polish across every TidBit release."
-      effectiveDate="Current Version: v2.1.1 (Build 7) · Updated: 4th November, 2026"
+      effectiveDate="Current Version: v2.1.2 (Build 8) · Updated: 12th November, 2026"
       sections={changelogSections}
       onBackToHome={onBackToHome}
     >
+      {/* ========================================================= */}
+      {/* v2.1.2 */}
+      {/* ========================================================= */}
+      <section id="v2-1-2" className="scroll-mt-24 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200/80 pb-3">
+          <div className="flex items-center gap-2.5">
+            <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
+              v2.1.2
+            </h2>
+            <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/70">
+              Latest Release
+            </span>
+          </div>
+          <span className="text-xs text-neutral-500 font-medium">
+            12th November, 2026
+          </span>
+        </div>
+
+        <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
+          Introducing the all-new 3D Journaling App: an authentic tactile digital diary engineered with physical hardcover styling, realistic spine hinge lighting, two-way 3D page flip mechanics, lined legal-pad writing sheet, and distraction-free private offline persistence.
+        </p>
+
+        <div className="space-y-3 pt-1">
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              Added
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Realistic 3D Journal Book:</strong> Designed with layered drop shadows, authentic stacked paper edges, customizable hardcover leather texture, custom gallery cover photo upload, debossed gold border, and gold ribbon bookmark.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Two-Way 3D Page Flip Engine:</strong> Flip pages in both directions with physical perspective folding (swiping up folds to next spread, swiping down folds from top to previous spread) with dynamic light and shadow occlusion.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Lined Notebook Page Editor:</strong> Full-width edge-to-edge ruled horizontal lines with calibrated typography baseline alignment, live word count, subtle saving indicator, and refined checkmark button.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Floating Calendar Menu & Mini Bar:</strong> Compact week bar with instant date jumping, expandable into a floating calendar menu with full month grid and entry indicator dots.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Apps Hub Journal Card:</strong> Elegant mahogany-leather card with gold rim styling and realistic miniature 3D book artwork in the learning hub.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-500" />
+              Improved
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Dynamic Text Sizing:</strong> Brief single-page entries adaptively scale up for comfortable reading, while multi-page entries use compact proportional sizing.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Edge-to-Edge Insets:</strong> Full status bar, navigation bar, and IME keyboard avoidance across all journal views and modal drawers.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ========================================================= */}
       {/* v2.1.1 */}
       {/* ========================================================= */}
