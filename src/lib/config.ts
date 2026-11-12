@@ -18,7 +18,7 @@ export const APP_CONFIG = {
   // Direct latest APK download link from the public releases repository
   apkDownloadUrl:
     import.meta.env.VITE_APK_DOWNLOAD_URL ||
-    "https://github.com/tidbit-app/tidbit-releases/releases/latest/download/tidbit-app-release.apk",
+    "https://github.com/tidbit-app/tidbit-releases/releases/download/v2.1.3/tidbit-app-release.apk",
     
   // Public Releases page
   releasesPageUrl: "https://github.com/tidbit-app/tidbit-releases/releases",
