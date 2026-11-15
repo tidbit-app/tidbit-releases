@@ -6,6 +6,7 @@ interface ChangelogProps {
 }
 
 const changelogSections = [
+  { id: "v2-1-4", title: "v2.1.4 · AI Chat Squircles, PDF Reader Polish & Local Library" },
   { id: "v2-1-3", title: "v2.1.3 · High-Performance PDF Reader & Book Store" },
   { id: "v2-1-2", title: "v2.1.2 · 3D Journaling App & Physics Engine" },
   { id: "v2-1-1", title: "v2.1.1 · Navigation & Drawer Fluidity" },
@@ -24,10 +25,85 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
     <LegalLayout
       title="Changelog & Release Notes"
       subtitle="Complete history of new features, performance improvements, bug fixes, and user experience polish across every TidBit release."
-      effectiveDate="Current Version: v2.1.3 (Build 9) · Updated: 13th November, 2026"
+      effectiveDate="Current Version: v2.1.4 (Build 10) · Updated: 16th November, 2026"
       sections={changelogSections}
       onBackToHome={onBackToHome}
     >
+      {/* ========================================================= */}
+      {/* v2.1.4 */}
+      {/* ========================================================= */}
+      <section id="v2-1-4" className="scroll-mt-24 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200/80 pb-3">
+          <div className="flex items-center gap-2.5">
+            <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
+              v2.1.4
+            </h2>
+            <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/70">
+              Latest Release
+            </span>
+          </div>
+          <span className="text-xs text-neutral-500 font-medium">
+            16th November, 2026
+          </span>
+        </div>
+
+        <p className="text-xs sm:text-[13px] leading-relaxed text-neutral-700">
+          User experience refinement across Tid AI, the PDF reader, and Book Store: introducing squircle attachment drawers, fullscreen image inspection modal, sliding reader direction segmented tabs, borderless circular themes, local-only custom PDF storage, and seamless in-place like heart bursts.
+        </p>
+
+        <div className="space-y-3 pt-1">
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              Added
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Tid AI Squircle Attachment Options:</strong> Recreated dual squircle options ("Photos" and contextual "Attach") across all Tid AI surfaces (PDF reader assistant, reels AI, discover page, and dedicated AI screen) with animated 45° rotation toggle.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Fullscreen Image Lightbox:</strong> Tap any image in Tid AI (attached previews, chat responses, search cards, and welcome recommendations) to open in an edge-to-edge high-resolution modal with one-tap dismissal.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Sliding Page Direction Tabs:</strong> Smooth animated segmented pill control for switching reader flow between horizontal page flip and vertical continuous strip.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Circular Borderless Theme Chips:</strong> Redesigned reader theme picker with 50dp borderless circular chips filled with respective theme tones and high-contrast icons.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Strict Local-Only Custom PDF Storage:</strong> Custom user-uploaded PDFs and reading progress are stored strictly on-device without uploading to the remote Neon book database, ensuring offline privacy.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold text-neutral-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-500" />
+              Improved
+            </h3>
+            <ul className="space-y-1.5 text-xs sm:text-[13px] text-neutral-700">
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Book Store Card Interactions:</strong> Added theme-adaptive background hover tints, elevation shifts, and responsive ripple effects for "Available Books" and "Continue Reading" cards.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Reader Settings Drawer Layout:</strong> Removed rigid button borders, increased corner radius to 22dp, reduced vertical gaps, and made bookmark jump chips display conditionally only when bookmarks exist.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-1.5 shrink-0" />
+                <span><strong>Center Heart Like Burst:</strong> Eliminated upward vertical drift at the end of the center like animation on postcards and reels for a crisp, in-place fade out.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ========================================================= */}
       {/* v2.1.3 */}
       {/* ========================================================= */}
@@ -37,9 +113,6 @@ export function Changelog({ onBackToHome }: ChangelogProps) {
             <h2 className="text-lg sm:text-xl font-bold text-neutral-900 font-display">
               v2.1.3
             </h2>
-            <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/70">
-              Latest Release
-            </span>
           </div>
           <span className="text-xs text-neutral-500 font-medium">
             13th November, 2026
