@@ -10,7 +10,7 @@ export const APP_CONFIG = {
   minAndroidVersion: "Android 8.0 (API level 26)+",
   supportedArchitectures: "ARM64-v8a, armeabi-v7a, x86_64",
   
-  // Public Release Repository on GitHub (Source code remains private in EduGram)
+  // Public Release Repository on GitHub (Source code remains private in TidBit)
   githubOwner: "tidbit-app",
   githubRepo: "tidbit-releases",
   githubRepoUrl: "https://github.com/tidbit-app/tidbit-releases",
